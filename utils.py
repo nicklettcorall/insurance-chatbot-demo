@@ -6,8 +6,8 @@ import openai
 def load_products(filepath="insurance_products.csv"):
     return pd.read_csv(filepath)
 
-def openai_answer(system_prompt, user_prompt, model="gpt-3.5-turbo"):
-    client = openai.OpenAI()
+def openai_answer(system_prompt, user_prompt, api_key, model="gpt-3.5-turbo"):
+    client = openai.OpenAI(api_key=api_key)
     response = client.chat.completions.create(
         model=model,
         messages=[
