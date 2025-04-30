@@ -3,16 +3,16 @@
 import streamlit as st
 from utils import load_products, load_clients, openai_answer, analyze_client_gaps
 
-st.set_page_config(page_title="Insurance Advisor Bot", layout="centered")
+st.set_page_config(page_title="i-NITIATE© Ray Demo", layout="centered")
 
-st.title("🤖 Insurance Advisor Chatbot")
+st.title("i-NITIATE© Ray Demo")
 user_api_key = st.text_input("Enter your OpenAI API Key", type="password")
 
 products_df = load_products()
 clients_df = load_clients()
 product_text = products_df.to_string(index=False)
 
-st.subheader("💬 Chat with Ray")
+st.subheader("Chat with Ray")
 user_input = st.text_input("Ask a client-related question (e.g., compare plans, check servicing opportunities, summarize portfolio)...")
 if st.button("Send") and user_input:
     system_prompt = (
@@ -35,7 +35,7 @@ if st.button("Send") and user_input:
 
 st.markdown("---")
 
-st.subheader("🧭 Advisor Tools")
+st.subheader("Advisor Tools 🔧")
 
 if st.checkbox("Check Client Servicing Opportunities"):
     selected_client = st.selectbox("Select a Client to Analyze", clients_df["Client Name"].tolist())
