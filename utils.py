@@ -6,6 +6,9 @@ import openai
 def load_products(filepath="insurance_products.csv"):
     return pd.read_csv(filepath)
 
+def load_clients(filepath="sample_clients.csv"):
+    return pd.read_csv(filepath)
+
 def openai_answer(system_prompt, user_prompt, api_key, model="gpt-3.5-turbo"):
     client = openai.OpenAI(api_key=api_key)
     response = client.chat.completions.create(
@@ -20,7 +23,6 @@ def openai_answer(system_prompt, user_prompt, api_key, model="gpt-3.5-turbo"):
     return response.choices[0].message.content
 
 def analyze_client_gaps(client_profile, portfolio_summary):
-    """ Very simple logic to simulate gap detection """
     gaps = []
     if 'Critical Illness' not in portfolio_summary:
         gaps.append("Missing Critical Illness Protection.")
