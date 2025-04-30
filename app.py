@@ -21,6 +21,7 @@ if st.button("Send") and user_input:
         "Always justify your advice using relevant plan information."
     )
     client_text = clients_df.to_string(index=False)
+    client_text = clients_df.to_string(index=False)
     final_prompt = (
         f"Here are the available products:
 
@@ -33,6 +34,7 @@ if st.button("Send") and user_input:
 
 "
         f"Advisor query: {user_input}"
+    )
     )
     if user_api_key:
         response = openai_answer(system_prompt, final_prompt, api_key=user_api_key)
