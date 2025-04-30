@@ -20,21 +20,12 @@ if st.button("Send") and user_input:
         "identify servicing opportunities, recommend suitable plans, or compare product features based on the provided data. "
         "Always justify your advice using relevant plan information."
     )
+    
     client_text = clients_df.to_string(index=False)
     final_prompt = (
-        f"Here are the available products:
-
-{product_text}
-
-"
-        f"Here are the current client profiles:
-
-{client_text}
-
-"
+        f"Here are the available products:\n\n{product_text}\n\n"
+        f"Here are the current client profiles:\n\n{client_text}\n\n"
         f"Advisor query: {user_input}"
-    )
-    )
     )
     if user_api_key:
         response = openai_answer(system_prompt, final_prompt, api_key=user_api_key)
