@@ -12,10 +12,10 @@
 import streamlit as st
 from utils import load_products, openai_answer, analyze_client_gaps
 
-st.set_page_config(page_title="Insurance Advisor Bot", layout="centered")
+st.set_page_config(page_title="Smarter Ray Prototype", layout="centered")
 
-st.title("🤖 Insurance Advisor Chatbot")
-user_api_key = st.text_input("Enter your OpenAI API Key", type="password")
+st.title("🧑‍🚀 Ray Demo")
+user_api_key = st.text_input("OpenAI API Key", type="password")
 
 # Load product data
 products_df = load_products()
@@ -23,7 +23,7 @@ product_text = products_df.to_string(index=False)
 
 # Chat mode
 st.subheader("💬 Chat with Ray")
-user_input = st.text_input("Ask me anything about insurance...")
+user_input = st.text_input("How can I help you today?")
 if st.button("Send") and user_input:
     system_prompt = "You are an intelligent insurance advisor. Use the product info to answer clearly."
     final_prompt = f"Here are the available products:\n\n{product_text}\n\nUser question: {user_input}"
