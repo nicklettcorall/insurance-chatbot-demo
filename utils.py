@@ -7,7 +7,8 @@ def load_products(filepath="insurance_products.csv"):
     return pd.read_csv(filepath)
 
 def openai_answer(system_prompt, user_prompt, model="gpt-3.5-turbo"):
-    response = openai.ChatCompletion.create(
+    client = openai.OpenAI()
+    response = client.chat.completions.create(
         model=model,
         messages=[
             {"role": "system", "content": system_prompt},
@@ -16,7 +17,7 @@ def openai_answer(system_prompt, user_prompt, model="gpt-3.5-turbo"):
         temperature=0.3,
         max_tokens=800
     )
-    return response['choices'][0]['message']['content']
+    return response.choices[0].message.content
 
 def analyze_client_gaps(client_profile, portfolio_summary):
     """ Very simple logic to simulate gap detection """
