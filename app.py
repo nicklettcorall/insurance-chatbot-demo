@@ -10,13 +10,12 @@
 # --- app.py ---
 
 import streamlit as st
-import openai
 from utils import load_products, openai_answer, analyze_client_gaps
 
 st.set_page_config(page_title="Insurance Advisor Bot", layout="centered")
 
 st.title("🤖 Insurance Advisor Chatbot")
-openai.api_key = st.text_input("Enter your OpenAI API Key", type="password")
+user_api_key = st.text_input("Enter your OpenAI API Key", type="password")
 
 # Load product data
 products_df = load_products()
@@ -28,10 +27,8 @@ user_input = st.text_input("Ask me anything about insurance...")
 if st.button("Send") and user_input:
     system_prompt = "You are an intelligent insurance advisor. Use the product info to answer clearly."
     final_prompt = f"Here are the available products:\n\n{product_text}\n\nUser question: {user_input}"
-    if openai.api_key:
-        openai.organization = None
-        openai.api_key = openai.api_key
-        response = openai_answer(system_prompt, final_prompt)
+    if user_api_key:
+        response = openai_answer(system_prompt, final_prompt, api_key=user_api_key)
         st.success(response)
     else:
         st.warning("Please enter your OpenAI API key.")
@@ -56,10 +53,8 @@ if st.checkbox("Compare Two Products"):
     if st.button("Compare Plans"):
         question = f"Compare these two plans: {plan1} vs {plan2}"
         compare_prompt = f"Here are the products:\n{product_text}\n\n{question}"
-        if openai.api_key:
-            openai.organization = None
-            openai.api_key = openai.api_key
-            result = openai_answer("You are an expert insurance assistant.", compare_prompt)
+        if user_api_key:
+            result = openai_answer("You are an expert insurance assistant.", compare_prompt, api_key=user_api_key)
             st.success(result)
         else:
             st.warning("Please enter your OpenAI API key.")
