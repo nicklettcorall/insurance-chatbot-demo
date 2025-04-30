@@ -3,24 +3,37 @@
 import streamlit as st
 from utils import load_products, load_clients, openai_answer, analyze_client_gaps
 
-st.set_page_config(page_title="i-NITIATE© Ray Demo", layout="centered")
+st.set_page_config(page_title="Insurance Advisor Bot", layout="centered")
 
-st.title("i-NITIATE© Ray Demo")
+st.title("🤖 Insurance Advisor Chatbot")
 user_api_key = st.text_input("Enter your OpenAI API Key", type="password")
 
 products_df = load_products()
 clients_df = load_clients()
 product_text = products_df.to_string(index=False)
 
-st.subheader("💬 Chat")
-user_input = st.text_input("Ask a client related question (e.g: compare plans, check servicing opportunities, summarize portfolio)...")
+st.subheader("💬 Chat with Ray")
+user_input = st.text_input("Ask a client-related question (e.g., compare plans, check servicing opportunities, summarize portfolio)...")
 if st.button("Send") and user_input:
     system_prompt = (
         "You are Ray, an AI assistant helping insurance advisors. When asked, analyze the client profile, "
         "identify servicing opportunities, recommend suitable plans, or compare product features based on the provided data. "
         "Always justify your advice using relevant plan information."
     )
-    final_prompt = f"Here are the available products:\n\n{product_text}\n\nAdvisor query: {user_input}"
+    client_text = clients_df.to_string(index=False)
+    final_prompt = (
+        f"Here are the available products:
+
+{product_text}
+
+"
+        f"Here are the current client profiles:
+
+{client_text}
+
+"
+        f"Advisor query: {user_input}"
+    )
     if user_api_key:
         response = openai_answer(system_prompt, final_prompt, api_key=user_api_key)
         st.success(response)
