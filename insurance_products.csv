@@ -1,7 +1,51 @@
-Plan Name,Insurer,Plan Type,Key Features,Suitable For,Premium Range
-Singlife Shield Plan 2,Singlife,Health Insurance,Private hospital coverage with MediSave support,General Hospitalization,$1000/year
-Singlife Health Plus,Singlife,Health Rider,Covers deductible and co-insurance portion,Hospital Enhancer,$300/year
-FWD Big 3 Critical Illness,FWD,Critical Illness,"Covers Cancer, Heart Attack, Stroke",CI Needs,$500/year
-China Taiping i-Save,China Taiping,Endowment,Savings plan with guaranteed returns,Education Planning,$1500/year
-FWD Future First,FWD,Endowment,Endowment plan with flexible maturity,General Savings,$1200/year
-China Taiping i-Secure Retirement,China Taiping,Retirement,Regular payout after retirement age,Retirement Planning,$1800/year
+Plan Name,Insurer,Plan Type,Key Features,Suitable For,Premium Range,Recommendation Summary
+Singlife Shield Plan 2,Singlife,Health Insurance,Private hospital coverage with MediSave support,General Hospitalization,$1000/year,Integrated shield plan with government subsidies.
+Singlife Health Plus,Singlife,Health Rider,Covers deductible and co-insurance portion,Hospital Enhancer,$300/year,Reduces out-of-pocket costs with Shield plans.
+FWD Big 3 CI,FWD,Critical Illness,"Covers Cancer, Heart Attack, Stroke",Major CI Protection,$500/year,Affordable protection against big 3 illnesses.
+China Taiping i-Save,China Taiping,Endowment,Savings plan with guaranteed returns,Education Planning,$1500/year,Ideal for child education goals.
+FWD Future First,FWD,Endowment,"Flexible maturity, partial withdrawals",General Savings,$1200/year,Good for medium-term savings.
+iSecure Retirement,China Taiping,Retirement,Lifetime payout from age 65,Post-retirement Income,$1800/year,Suits clients planning passive income after retirement.
+Income Plan 06,Income,Health Insurance,Health Insurance benefits with flexible options,Hospitalization,$700/year,Recommended for hospitalization with health insurance features.
+China Taiping Plan 07,China Taiping,Health Rider,Health Rider benefits with flexible options,CI Protection,$900/year,Recommended for ci protection with health rider features.
+Singlife Plan 08,Singlife,Critical Illness,Critical Illness benefits with flexible options,Wealth Accumulation,$1100/year,Recommended for wealth accumulation with critical illness features.
+FWD Plan 09,FWD,Endowment,Endowment benefits with flexible options,Education Planning,$1300/year,Recommended for education planning with endowment features.
+Income Plan 10,Income,Investment-linked,Investment-linked benefits with flexible options,Retirement Income,$500/year,Recommended for retirement income with investment-linked features.
+China Taiping Plan 11,China Taiping,Retirement,Retirement benefits with flexible options,Flexible Growth,$700/year,Recommended for flexible growth with retirement features.
+Singlife Plan 12,Singlife,Health Insurance,Health Insurance benefits with flexible options,Hospitalization,$900/year,Recommended for hospitalization with health insurance features.
+FWD Plan 13,FWD,Health Rider,Health Rider benefits with flexible options,CI Protection,$1100/year,Recommended for ci protection with health rider features.
+Income Plan 14,Income,Critical Illness,Critical Illness benefits with flexible options,Wealth Accumulation,$1300/year,Recommended for wealth accumulation with critical illness features.
+China Taiping Plan 15,China Taiping,Endowment,Endowment benefits with flexible options,Education Planning,$500/year,Recommended for education planning with endowment features.
+Singlife Plan 16,Singlife,Investment-linked,Investment-linked benefits with flexible options,Retirement Income,$700/year,Recommended for retirement income with investment-linked features.
+FWD Plan 17,FWD,Retirement,Retirement benefits with flexible options,Flexible Growth,$900/year,Recommended for flexible growth with retirement features.
+Income Plan 18,Income,Health Insurance,Health Insurance benefits with flexible options,Hospitalization,$1100/year,Recommended for hospitalization with health insurance features.
+China Taiping Plan 19,China Taiping,Health Rider,Health Rider benefits with flexible options,CI Protection,$1300/year,Recommended for ci protection with health rider features.
+Singlife Plan 20,Singlife,Critical Illness,Critical Illness benefits with flexible options,Wealth Accumulation,$500/year,Recommended for wealth accumulation with critical illness features.
+FWD Plan 21,FWD,Endowment,Endowment benefits with flexible options,Education Planning,$700/year,Recommended for education planning with endowment features.
+Income Plan 22,Income,Investment-linked,Investment-linked benefits with flexible options,Retirement Income,$900/year,Recommended for retirement income with investment-linked features.
+China Taiping Plan 23,China Taiping,Retirement,Retirement benefits with flexible options,Flexible Growth,$1100/year,Recommended for flexible growth with retirement features.
+Singlife Plan 24,Singlife,Health Insurance,Health Insurance benefits with flexible options,Hospitalization,$1300/year,Recommended for hospitalization with health insurance features.
+FWD Plan 25,FWD,Health Rider,Health Rider benefits with flexible options,CI Protection,$500/year,Recommended for ci protection with health rider features.
+Income Plan 26,Income,Critical Illness,Critical Illness benefits with flexible options,Wealth Accumulation,$700/year,Recommended for wealth accumulation with critical illness features.
+China Taiping Plan 27,China Taiping,Endowment,Endowment benefits with flexible options,Education Planning,$900/year,Recommended for education planning with endowment features.
+Singlife Plan 28,Singlife,Investment-linked,Investment-linked benefits with flexible options,Retirement Income,$1100/year,Recommended for retirement income with investment-linked features.
+FWD Plan 29,FWD,Retirement,Retirement benefits with flexible options,Flexible Growth,$1300/year,Recommended for flexible growth with retirement features.
+Income Plan 30,Income,Health Insurance,Health Insurance benefits with flexible options,Hospitalization,$500/year,Recommended for hospitalization with health insurance features.
+China Taiping Plan 31,China Taiping,Health Rider,Health Rider benefits with flexible options,CI Protection,$700/year,Recommended for ci protection with health rider features.
+Singlife Plan 32,Singlife,Critical Illness,Critical Illness benefits with flexible options,Wealth Accumulation,$900/year,Recommended for wealth accumulation with critical illness features.
+FWD Plan 33,FWD,Endowment,Endowment benefits with flexible options,Education Planning,$1100/year,Recommended for education planning with endowment features.
+Income Plan 34,Income,Investment-linked,Investment-linked benefits with flexible options,Retirement Income,$1300/year,Recommended for retirement income with investment-linked features.
+China Taiping Plan 35,China Taiping,Retirement,Retirement benefits with flexible options,Flexible Growth,$500/year,Recommended for flexible growth with retirement features.
+Singlife Plan 36,Singlife,Health Insurance,Health Insurance benefits with flexible options,Hospitalization,$700/year,Recommended for hospitalization with health insurance features.
+FWD Plan 37,FWD,Health Rider,Health Rider benefits with flexible options,CI Protection,$900/year,Recommended for ci protection with health rider features.
+Income Plan 38,Income,Critical Illness,Critical Illness benefits with flexible options,Wealth Accumulation,$1100/year,Recommended for wealth accumulation with critical illness features.
+China Taiping Plan 39,China Taiping,Endowment,Endowment benefits with flexible options,Education Planning,$1300/year,Recommended for education planning with endowment features.
+Singlife Plan 40,Singlife,Investment-linked,Investment-linked benefits with flexible options,Retirement Income,$500/year,Recommended for retirement income with investment-linked features.
+FWD Plan 41,FWD,Retirement,Retirement benefits with flexible options,Flexible Growth,$700/year,Recommended for flexible growth with retirement features.
+Income Plan 42,Income,Health Insurance,Health Insurance benefits with flexible options,Hospitalization,$900/year,Recommended for hospitalization with health insurance features.
+China Taiping Plan 43,China Taiping,Health Rider,Health Rider benefits with flexible options,CI Protection,$1100/year,Recommended for ci protection with health rider features.
+Singlife Plan 44,Singlife,Critical Illness,Critical Illness benefits with flexible options,Wealth Accumulation,$1300/year,Recommended for wealth accumulation with critical illness features.
+FWD Plan 45,FWD,Endowment,Endowment benefits with flexible options,Education Planning,$500/year,Recommended for education planning with endowment features.
+Income Plan 46,Income,Investment-linked,Investment-linked benefits with flexible options,Retirement Income,$700/year,Recommended for retirement income with investment-linked features.
+China Taiping Plan 47,China Taiping,Retirement,Retirement benefits with flexible options,Flexible Growth,$900/year,Recommended for flexible growth with retirement features.
+Singlife Plan 48,Singlife,Health Insurance,Health Insurance benefits with flexible options,Hospitalization,$1100/year,Recommended for hospitalization with health insurance features.
+FWD Plan 49,FWD,Health Rider,Health Rider benefits with flexible options,CI Protection,$1300/year,Recommended for ci protection with health rider features.
