@@ -1,20 +1,19 @@
 # --- app.py ---
 
 import streamlit as st
-from utils import load_products, openai_answer, analyze_client_gaps
+from utils import load_products, load_clients, openai_answer, analyze_client_gaps
 
-st.set_page_config(page_title="i-NITIATE© Ray Demo", layout="centered")
+st.set_page_config(page_title="Insurance Advisor Bot", layout="centered")
 
-st.title("i-NITIATE© Ray Demo")
+st.title("🤖 Insurance Advisor Chatbot")
 user_api_key = st.text_input("Enter your OpenAI API Key", type="password")
 
-# Load product data
 products_df = load_products()
+clients_df = load_clients()
 product_text = products_df.to_string(index=False)
 
-# Chat mode
-st.subheader("Chat with Ray 💬")
-user_input = st.text_input("Ask a client related question (e.g. compare plans, check servicing opportunities, summarize portfolio)...")
+st.subheader("💬 Chat with Ray")
+user_input = st.text_input("Ask a client-related question (e.g., compare plans, check servicing opportunities, summarize portfolio)...")
 if st.button("Send") and user_input:
     system_prompt = (
         "You are Ray, an AI assistant helping insurance advisors. When asked, analyze the client profile, "
@@ -30,13 +29,15 @@ if st.button("Send") and user_input:
 
 st.markdown("---")
 
-# Button-based mode
 st.subheader("🧭 Advisor Tools")
+
 if st.checkbox("Check Client Servicing Opportunities"):
-    profile = st.text_area("Enter Client Profile Summary:",
-                           "41 years old, Married, 1 daughter, has Singlife Shield Plan 2, Singlife Health Plus")
-    summary = st.text_area("Enter Key Portfolio Notes:",
-                           "Medishield Life, Singlife Shield Plan, Health Plus only")
+    selected_client = st.selectbox("Select a Client to Analyze", clients_df["Client Name"].tolist())
+    client_row = clients_df[clients_df["Client Name"] == selected_client].iloc[0]
+    profile = f"{client_row['Age']} years old, {client_row['Marital Status']}, {client_row['Children']}. {client_row['Dependents']}"
+    summary = f"{client_row['Client Plans']}. {client_row['Notes']}"
+    st.text_area("Client Profile", value=profile, height=100)
+    st.text_area("Portfolio Summary", value=summary, height=100)
     if st.button("Analyze Gaps"):
         result = analyze_client_gaps(profile, summary)
         st.info("\n".join(result) if result else "No major gaps detected.")
