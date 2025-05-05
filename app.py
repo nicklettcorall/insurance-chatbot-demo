@@ -13,12 +13,13 @@ clients_df = load_clients()
 product_text = products_df.to_string(index=False)
 
 st.subheader("Chat with Ray")
-user_input = st.text_input("Ask a client-related question (e.g., compare plans, check servicing opportunities, summarize portfolio)...")
+user_input = st.text_input("Ask a client related question (e.g: compare plans, check servicing opportunities, summarise portfolio)...")
 if st.button("Send") and user_input:
     system_prompt = (
-        "You are Ray, an AI assistant helping insurance advisors. When asked, analyze the client profile, "
+        "You are Ray, an AI assistant helping insurance advisors. When asked, analyse the client profile, "
         "identify servicing opportunities, recommend suitable plans, or compare product features based on the provided data. "
-        "Always justify your advice using relevant plan information."
+        "Always justify your advice using relevant plan information. "
+        "Use conversational Tone, make it easier to read by change sentence structures, and break down Big Ideas."
     )
     
     client_text = clients_df.to_string(index=False)
