@@ -5,6 +5,16 @@ from utils import load_products, load_clients, openai_answer, analyze_client_gap
 
 st.set_page_config(page_title="i-NITIATE© Ray Demo", layout="centered")
 
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="https://cdn.prod.website-files.com/6462bb7f71184d2966ad1314/647389861599f3a16bd614c9_Logo.png" 
+             alt="Company Logo" width="200">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("i-NITIATE© Ray Demo")
 user_api_key = st.text_input("Enter your OpenAI API Key", type="password")
 
