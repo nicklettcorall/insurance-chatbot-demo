@@ -1,11 +1,11 @@
-Client Name	Age	Marital Status	Children	Dependents	Client Plans	Notes
-David Nicholas	45	Married	2 Children	-	FWD Big 3 CI, FWD Future First	Monthly income: $8,500; Monthly expenses: $5,200; Occupation: Engineer
-Emily Tan	34	Single	None	-	Singlife Shield Plan 2, Health Plus	Monthly income: $6,200; Monthly expenses: $3,800; Occupation: Teacher
-Michael Goh	51	Married	1 Child	-	Income Enhanced IncomeShield, Income CI Plan	Monthly income: $11,000; Monthly expenses: $6,500; Occupation: Business Owner
-Sophia Lim	29	Single	None	-	China Taiping i-Save, i-Care Rider	Monthly income: $5,700; Monthly expenses: $2,900; Occupation: Nurse
-Daniel Wong	38	Divorced	2 Children	-	FWD Big 3 CI, FWD Future First	Monthly income: $7,800; Monthly expenses: $4,300; Occupation: Financial Analyst
-Chloe Teo	40	Married	1 Child	-	Singlife Shield Plan 2, Health Plus	Monthly income: $9,000; Monthly expenses: $5,000; Occupation: Sales Executive
-Benjamin Lee	48	Married	3 Children	-	Income Enhanced IncomeShield, Income CI Plan	Monthly income: $10,500; Monthly expenses: $6,200; Occupation: HR Manager
-Grace Ng	35	Single	None	-	China Taiping i-Save, i-Care Rider	Monthly income: $6,000; Monthly expenses: $3,500; Occupation: IT Consultant
-Ethan Chua	30	Married	1 Child	-	FWD Big 3 CI, FWD Future First	Monthly income: $6,800; Monthly expenses: $4,100; Occupation: Operations Executive
-Natalie Chan	43	Married	2 Children	-	Income Enhanced IncomeShield, Income CI Plan	Monthly income: $9,300; Monthly expenses: $5,700; Occupation: Freelancer
+Client Name,Age,Marital Status,Children,Dependents,Client Plans,Notes
+Desmond Chong,45,Married,2 Children,-,"""FWD Big 3 CI, FWD Future First""","""Monthly income: $8,500; Monthly expenses: $5,200; Occupation: Engineer"""
+Emily Tan,34,Single,None,-,"""Singlife Shield Plan 2, Health Plus""","""Monthly income: $6,200; Monthly expenses: $3,800; Occupation: Teacher"""
+Michael Goh,51,Married,1 Child,-,"""Income Enhanced IncomeShield, Income CI Plan""","""Monthly income: $11,000; Monthly expenses: $6,500; Occupation: Business Owner"""
+Sophia Lim,29,Single,None,-,"""China Taiping i-Save, i-Care Rider""","""Monthly income: $5,700; Monthly expenses: $2,900; Occupation: Nurse"""
+Daniel Wong,38,Divorced,2 Children,-,"""FWD Big 3 CI, FWD Future First""","""Monthly income: $7,800; Monthly expenses: $4,300; Occupation: Financial Analyst"""
+Chloe Teo,40,Married,1 Child,-,"""Singlife Shield Plan 2, Health Plus""","""Monthly income: $9,000; Monthly expenses: $5,000; Occupation: Sales Executive"""
+Benjamin Lee,48,Married,3 Children,-,"""Income Enhanced IncomeShield, Income CI Plan""","""Monthly income: $10,500; Monthly expenses: $6,200; Occupation: HR Manager"""
+Grace Ng,35,Single,None,-,"""China Taiping i-Save, i-Care Rider""","""Monthly income: $6,000; Monthly expenses: $3,500; Occupation: IT Consultant"""
+Ethan Chua,30,Married,1 Child,-,"""FWD Big 3 CI, FWD Future First""","""Monthly income: $6,800; Monthly expenses: $4,100; Occupation: Operations Executive"""
+Natalie Chan,43,Married,2 Children,-,"""Income Enhanced IncomeShield, Income CI Plan""","""Monthly income: $9,300; Monthly expenses: $5,700; Occupation: Freelancer"""
